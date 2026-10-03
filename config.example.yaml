@@ -1,0 +1,52 @@
+# Example configuration for the Kalshi BTC 15-minute bot.
+
+mode: paper          # paper | live
+series_ticker: KXBTC15M
+
+storage:
+  sqlite_path: ./bot_state.sqlite
+  window_log_jsonl: ./window_logs.jsonl
+
+kalshi:
+  # Live: https://api.elections.kalshi.com
+  # Demo: https://demo-api.kalshi.co
+  base_url: https://demo-api.kalshi.co
+
+  # Required for live trading (and for authenticated endpoints).
+  api_key_id: "YOUR_KALSHI_API_KEY_ID"
+  private_key_pem_path: "./kalshi_private_key.pem"
+
+  # Subaccount (0 = primary)
+  subaccount: 0
+
+strategy:
+  rsi_period: 14
+  bullish_rsi: 55
+  bearish_rsi: 45
+  neutral_fallback_side: "yes"   # yes | no
+
+  # Volatility / expected range estimate configuration
+  atr_period: 14
+  candle_granularity_seconds: 60
+  history_lookback_minutes: 120   # should be >= max(rsi_period*3, atr_period+2)
+
+execution:
+  window_minutes: 15
+
+  min_seconds_to_close: 20        # entry cutoff; must have >= this many seconds remaining
+  entry_max_cents: 60             # max ask price allowed
+  spread_max_cents: 10            # max spread allowed (ask - bid)
+  usd_budget: 10.00               # per-window budget (incl fees)
+
+  # Execution behavior
+  tick_size_cents: 1
+  attempt_sleep_seconds: 1.0
+  wait_for_fill_seconds: 1.0
+  walk_step_cents: 1
+  max_walk_cents: 10              # cap walking (optional)
+  order_expiration_buffer_seconds: 3   # expire orders slightly before cutoff for safety
+
+price_feed:
+  provider: coinbase
+  # Coinbase product for candles:
+  product_id: BTC-USD
