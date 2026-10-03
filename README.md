@@ -1,5 +1,32 @@
 # Kalshi BTC 15-Minute Trading Bot
 
+## What it does
+
+The bot trades Kalshi 15-minute BTC markets (for example the KXBTC15M series)
+with a fixed, rule-based strategy. It ships in paper mode: nothing is sent to
+Kalshi unless you switch `mode` to `live` and add API credentials.
+
+- Signal. Once per window it computes a 14-period RSI from 60-second Coinbase
+  BTC-USD candles over a 120-minute lookback. RSI above 55 is bullish, below
+  45 bearish, anything in between neutral.
+- Range estimate. A 14-period ATR proxy over the same candles gives an
+  expected price range for the window, which feeds the strike selection.
+- Strike and side. Bullish windows pick the open market whose strike is
+  closest above the current spot and buy Yes; bearish windows pick the closest
+  strike below spot and buy No; neutral windows fall back to the configured
+  side.
+- Execution. Limit orders are placed inside the spread and walked up to a cap,
+  within a per-window USD budget that includes fees. At most one filled buy
+  per window, no selling and no early exit; positions are held to settlement.
+- Paper trading. In paper mode no orders leave the machine. Fills are
+  simulated deterministically against the live order-book snapshot, fees are
+  estimated with Kalshi's published fee model, and every window, filled or not,
+  is logged with cumulative PnL to a local SQLite database and a JSONL log.
+
+To try it for real, switch `mode` to `live`, point the config at the Kalshi
+API, and supply your API credentials. For safe testing there is also Kalshi's
+demo API (the default base URL in `config.example.yaml`).
+
 A bot that trades Kalshi BTC 15-minute markets. I built it to run a fixed strategy with hard limits, so it cannot do anything I did not tell it to do.
 
 How it works:
