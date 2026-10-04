@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import math
 from dataclasses import dataclass
 from typing import List, Optional, Tuple
 
@@ -76,6 +77,8 @@ def estimate_expected_range(
     window_seconds = window_minutes * 60
     if candle_seconds <= 0:
         return None
-    multiplier = window_seconds / candle_seconds
-    expected_range = atr * multiplier
+    # Volatility scales with the square root of time: over N candles the
+    # expected range is atr * sqrt(N), not atr * N.
+    n_periods = window_seconds / candle_seconds
+    expected_range = atr * math.sqrt(n_periods)
     return VolEstimate(atr=float(atr), expected_range=float(expected_range))

@@ -10,11 +10,14 @@ Kalshi unless you switch `mode` to `live` and add API credentials.
   BTC-USD candles over a 120-minute lookback. RSI above 55 is bullish, below
   45 bearish, anything in between neutral.
 - Range estimate. A 14-period ATR proxy over the same candles gives an
-  expected price range for the window, which feeds the strike selection.
+  expected price range for the window, scaled by the square root of the
+  number of candles in the window. It is logged with each decision; the
+  strike choice itself is by spot price.
 - Strike and side. Bullish windows pick the open market whose strike is
   closest above the current spot and buy Yes; bearish windows pick the closest
-  strike below spot and buy No; neutral windows fall back to the configured
-  side.
+  strike below spot and buy No; neutral windows pick the closest strike and
+  take Yes when the spot is at or above it, No otherwise (the configured side
+  only applies when no strike parses from the market).
 - Execution. Limit orders are placed inside the spread and walked up to a cap,
   within a per-window USD budget that includes fees. At most one filled buy
   per window, no selling and no early exit; positions are held to settlement.
