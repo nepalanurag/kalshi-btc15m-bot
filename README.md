@@ -69,6 +69,47 @@ python -m kalshi_btc15m_bot.run --config config.yaml
 - SQLite database (`bot_state.sqlite`): windows, positions, cumulative PnL.
 - JSONL window log (`window_logs.jsonl`).
 
+## Validation
+
+The `backtest/` package is the evaluation layer for this bot: a historical
+backtester, an expected-value gate, a threshold sensitivity report, and a
+fill-model comparison. The trading logic itself is untouched; the harness
+replays history through the bot's own decision functions and measures what
+comes out.
+
+- **Backtester** (`python -m backtest.backtester --days 21 --config config.example.yaml`).
+  Replays recorded Coinbase 60-second candles over 15-minute windows,
+  settles each window against the actual BTC move, and reports hit rate vs
+  implied probability by regime, profit factor, max drawdown, and
+  fee-inclusive PnL. **Read the ASSUMPTIONS block at the top of
+  `backtest/backtester.py` first**: historical Kalshi order books and trade
+  prices are unavailable, so entry prices are proxied by a
+  moneyness/volatility model, strikes come from a synthetic round-number
+  grid, and fills are assumed complete at the proxied price. A 21-day run
+  on the config defaults is in `backtest/reports/backtest_report.json`.
+- **EV gate** (`python -m backtest.ev_gate`). The expected-value check the
+  live bot can enable: only enter when
+  `implied_prob < estimated_win_prob - margin`, with the win rate measured
+  per regime from backtest reports or paper window logs. It ships default
+  off (pass-through), so enabling it is a deliberate choice, documented in
+  `backtest/ev_gate.py`.
+- **Threshold sensitivity** (`python -m backtest.threshold_sensitivity`).
+  Grid report over RSI thresholds and periods. The 55/45 thresholds are
+  starting points under evaluation; the report shows the surface around
+  them (`backtest/reports/threshold_report.json`).
+- **Fill models** (`python -m backtest.fill_models --demo`, or `--jsonl
+  window_logs.jsonl`). The paper simulator's optimistic fill next to a
+  conservative model with queue position, partial fills, and adverse
+  selection, reporting paper PnL under both assumptions side by side.
+
+What the backtest can and cannot show: it can show whether the decision
+logic behaves consistently over history, how realized hit rates compare to
+the implied probabilities the strategy pays, and how sensitive results are
+to the RSI thresholds. It cannot show real Kalshi profitability. Entry
+prices, spreads, queue position, and fills are modeled, not measured, so
+every PnL number is conditional on the stated assumptions -- a starting
+point for risk decisions, not an expected return.
+
 ## Notes
 
 - Uses the Kalshi Trade API v2: market data from `/trade-api/v2/markets` and order books, orders through `/trade-api/v2/portfolio/orders`.
