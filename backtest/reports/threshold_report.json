@@ -1,0 +1,1040 @@
+{
+  "data_range": {
+    "start": "2026-09-14T00:00:00+00:00",
+    "end": "2026-10-05T00:00:00+00:00",
+    "candles": 30541,
+    "generated_at": "2026-10-05T21:57:58.555281+00:00"
+  },
+  "grid": {
+    "rsi_period": [
+      10,
+      14,
+      21
+    ],
+    "bullish_rsi": [
+      50,
+      52,
+      55,
+      58,
+      60
+    ],
+    "bearish_rsi": [
+      40,
+      42,
+      45,
+      48,
+      50
+    ]
+  },
+  "note": "Thresholds 55/45 and period 14 are starting points under evaluation. This table shows how backtest PnL moves around them under the harness assumptions in backtester.py.",
+  "results": [
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 52,
+      "bearish_rsi": 50,
+      "windows_traded": 1965,
+      "total_pnl_dollars": -3814.51,
+      "profit_factor": 0.717,
+      "max_drawdown_dollars": 4158.08,
+      "hit_rate_by_regime": {
+        "bullish": 0.2949,
+        "bearish": 0.2798,
+        "neutral": 0.5115
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 50,
+      "bearish_rsi": 48,
+      "windows_traded": 1968,
+      "total_pnl_dollars": -3453.7,
+      "profit_factor": 0.742,
+      "max_drawdown_dollars": 3855.53,
+      "hit_rate_by_regime": {
+        "bullish": 0.3043,
+        "bearish": 0.2811,
+        "neutral": 0.5361
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 50,
+      "bearish_rsi": 48,
+      "windows_traded": 1982,
+      "total_pnl_dollars": -3226.95,
+      "profit_factor": 0.76,
+      "max_drawdown_dollars": 3594.69,
+      "hit_rate_by_regime": {
+        "bullish": 0.3094,
+        "bearish": 0.2859,
+        "neutral": 0.5
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 55,
+      "bearish_rsi": 50,
+      "windows_traded": 1893,
+      "total_pnl_dollars": -3151.17,
+      "profit_factor": 0.745,
+      "max_drawdown_dollars": 3457.38,
+      "hit_rate_by_regime": {
+        "neutral": 0.5661,
+        "bearish": 0.2798,
+        "bullish": 0.3073
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 50,
+      "bearish_rsi": 48,
+      "windows_traded": 1951,
+      "total_pnl_dollars": -3132.73,
+      "profit_factor": 0.76,
+      "max_drawdown_dollars": 3591.88,
+      "hit_rate_by_regime": {
+        "bullish": 0.2991,
+        "bearish": 0.2919,
+        "neutral": 0.6131
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 52,
+      "bearish_rsi": 50,
+      "windows_traded": 1961,
+      "total_pnl_dollars": -3124.42,
+      "profit_factor": 0.764,
+      "max_drawdown_dollars": 3454.12,
+      "hit_rate_by_regime": {
+        "bullish": 0.3109,
+        "bearish": 0.2915,
+        "neutral": 0.5196
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 50,
+      "bearish_rsi": 45,
+      "windows_traded": 1903,
+      "total_pnl_dollars": -3111.32,
+      "profit_factor": 0.753,
+      "max_drawdown_dollars": 3518.14,
+      "hit_rate_by_regime": {
+        "bullish": 0.3043,
+        "bearish": 0.2739,
+        "neutral": 0.5458
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 52,
+      "bearish_rsi": 48,
+      "windows_traded": 1913,
+      "total_pnl_dollars": -3050.45,
+      "profit_factor": 0.761,
+      "max_drawdown_dollars": 3472.14,
+      "hit_rate_by_regime": {
+        "bullish": 0.3109,
+        "bearish": 0.2811,
+        "neutral": 0.5276
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 52,
+      "bearish_rsi": 50,
+      "windows_traded": 1982,
+      "total_pnl_dollars": -2964.58,
+      "profit_factor": 0.778,
+      "max_drawdown_dollars": 3314.6,
+      "hit_rate_by_regime": {
+        "bullish": 0.3117,
+        "bearish": 0.2964,
+        "neutral": 0.5349
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 52,
+      "bearish_rsi": 48,
+      "windows_traded": 1948,
+      "total_pnl_dollars": -2947.58,
+      "profit_factor": 0.773,
+      "max_drawdown_dollars": 3330.99,
+      "hit_rate_by_regime": {
+        "bullish": 0.3117,
+        "bearish": 0.2859,
+        "neutral": 0.5167
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 52,
+      "bearish_rsi": 48,
+      "windows_traded": 1900,
+      "total_pnl_dollars": -2926.18,
+      "profit_factor": 0.765,
+      "max_drawdown_dollars": 3376.78,
+      "hit_rate_by_regime": {
+        "bullish": 0.2949,
+        "bearish": 0.2919,
+        "neutral": 0.5634
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 58,
+      "bearish_rsi": 50,
+      "windows_traded": 1824,
+      "total_pnl_dollars": -2872.11,
+      "profit_factor": 0.753,
+      "max_drawdown_dollars": 3116.36,
+      "hit_rate_by_regime": {
+        "neutral": 0.552,
+        "bearish": 0.2798,
+        "bullish": 0.3088
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 50,
+      "bearish_rsi": 45,
+      "windows_traded": 1922,
+      "total_pnl_dollars": -2849.83,
+      "profit_factor": 0.776,
+      "max_drawdown_dollars": 3283.0,
+      "hit_rate_by_regime": {
+        "bullish": 0.3094,
+        "bearish": 0.2796,
+        "neutral": 0.5433
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 55,
+      "bearish_rsi": 50,
+      "windows_traded": 1906,
+      "total_pnl_dollars": -2802.97,
+      "profit_factor": 0.775,
+      "max_drawdown_dollars": 3080.62,
+      "hit_rate_by_regime": {
+        "neutral": 0.5538,
+        "bearish": 0.2915,
+        "bullish": 0.3083
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 55,
+      "bearish_rsi": 48,
+      "windows_traded": 1858,
+      "total_pnl_dollars": -2729.0,
+      "profit_factor": 0.772,
+      "max_drawdown_dollars": 3098.64,
+      "hit_rate_by_regime": {
+        "neutral": 0.549,
+        "bearish": 0.2811,
+        "bullish": 0.3083
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 50,
+      "bearish_rsi": 45,
+      "windows_traded": 1863,
+      "total_pnl_dollars": -2714.48,
+      "profit_factor": 0.775,
+      "max_drawdown_dollars": 3220.97,
+      "hit_rate_by_regime": {
+        "bullish": 0.2991,
+        "bearish": 0.2812,
+        "neutral": 0.566
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 52,
+      "bearish_rsi": 45,
+      "windows_traded": 1848,
+      "total_pnl_dollars": -2708.07,
+      "profit_factor": 0.773,
+      "max_drawdown_dollars": 3141.76,
+      "hit_rate_by_regime": {
+        "bullish": 0.3109,
+        "bearish": 0.2739,
+        "neutral": 0.5382
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 50,
+      "bearish_rsi": 42,
+      "windows_traded": 1878,
+      "total_pnl_dollars": -2679.92,
+      "profit_factor": 0.781,
+      "max_drawdown_dollars": 3107.59,
+      "hit_rate_by_regime": {
+        "bullish": 0.3094,
+        "bearish": 0.2648,
+        "neutral": 0.5435
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 60,
+      "bearish_rsi": 50,
+      "windows_traded": 1778,
+      "total_pnl_dollars": -2643.74,
+      "profit_factor": 0.761,
+      "max_drawdown_dollars": 2894.69,
+      "hit_rate_by_regime": {
+        "neutral": 0.5523,
+        "bearish": 0.2798,
+        "bullish": 0.3154
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 52,
+      "bearish_rsi": 45,
+      "windows_traded": 1888,
+      "total_pnl_dollars": -2570.46,
+      "profit_factor": 0.791,
+      "max_drawdown_dollars": 3019.3,
+      "hit_rate_by_regime": {
+        "bullish": 0.3117,
+        "bearish": 0.2796,
+        "neutral": 0.5408
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 58,
+      "bearish_rsi": 50,
+      "windows_traded": 1857,
+      "total_pnl_dollars": -2545.87,
+      "profit_factor": 0.785,
+      "max_drawdown_dollars": 2809.0,
+      "hit_rate_by_regime": {
+        "neutral": 0.5605,
+        "bearish": 0.2915,
+        "bullish": 0.3044
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 50,
+      "bearish_rsi": 42,
+      "windows_traded": 1847,
+      "total_pnl_dollars": -2545.3,
+      "profit_factor": 0.784,
+      "max_drawdown_dollars": 3021.06,
+      "hit_rate_by_regime": {
+        "bullish": 0.3043,
+        "bearish": 0.2706,
+        "neutral": 0.553
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 55,
+      "bearish_rsi": 50,
+      "windows_traded": 1926,
+      "total_pnl_dollars": -2528.15,
+      "profit_factor": 0.799,
+      "max_drawdown_dollars": 2857.71,
+      "hit_rate_by_regime": {
+        "neutral": 0.5636,
+        "bearish": 0.2964,
+        "bullish": 0.3148
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 55,
+      "bearish_rsi": 48,
+      "windows_traded": 1892,
+      "total_pnl_dollars": -2511.15,
+      "profit_factor": 0.795,
+      "max_drawdown_dollars": 2883.94,
+      "hit_rate_by_regime": {
+        "neutral": 0.5446,
+        "bearish": 0.2859,
+        "bullish": 0.3148
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 52,
+      "bearish_rsi": 45,
+      "windows_traded": 1812,
+      "total_pnl_dollars": -2507.93,
+      "profit_factor": 0.781,
+      "max_drawdown_dollars": 3002.04,
+      "hit_rate_by_regime": {
+        "bullish": 0.2949,
+        "bearish": 0.2812,
+        "neutral": 0.5501
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 58,
+      "bearish_rsi": 48,
+      "windows_traded": 1809,
+      "total_pnl_dollars": -2471.9,
+      "profit_factor": 0.782,
+      "max_drawdown_dollars": 2827.02,
+      "hit_rate_by_regime": {
+        "neutral": 0.5556,
+        "bearish": 0.2811,
+        "bullish": 0.3044
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 50,
+      "bearish_rsi": 42,
+      "windows_traded": 1810,
+      "total_pnl_dollars": -2443.46,
+      "profit_factor": 0.784,
+      "max_drawdown_dollars": 2967.02,
+      "hit_rate_by_regime": {
+        "bullish": 0.2991,
+        "bearish": 0.2691,
+        "neutral": 0.5822
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 58,
+      "bearish_rsi": 50,
+      "windows_traded": 1882,
+      "total_pnl_dollars": -2441.64,
+      "profit_factor": 0.798,
+      "max_drawdown_dollars": 2712.77,
+      "hit_rate_by_regime": {
+        "neutral": 0.5525,
+        "bearish": 0.2964,
+        "bullish": 0.3106
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 58,
+      "bearish_rsi": 48,
+      "windows_traded": 1848,
+      "total_pnl_dollars": -2424.64,
+      "profit_factor": 0.794,
+      "max_drawdown_dollars": 2739.0,
+      "hit_rate_by_regime": {
+        "neutral": 0.5407,
+        "bearish": 0.2859,
+        "bullish": 0.3106
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 52,
+      "bearish_rsi": 42,
+      "windows_traded": 1844,
+      "total_pnl_dollars": -2400.55,
+      "profit_factor": 0.796,
+      "max_drawdown_dollars": 2843.89,
+      "hit_rate_by_regime": {
+        "bullish": 0.3117,
+        "bearish": 0.2648,
+        "neutral": 0.5417
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 55,
+      "bearish_rsi": 45,
+      "windows_traded": 1793,
+      "total_pnl_dollars": -2386.62,
+      "profit_factor": 0.786,
+      "max_drawdown_dollars": 2768.26,
+      "hit_rate_by_regime": {
+        "neutral": 0.5499,
+        "bearish": 0.2739,
+        "bullish": 0.3083
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 50,
+      "bearish_rsi": 40,
+      "windows_traded": 1808,
+      "total_pnl_dollars": -2367.19,
+      "profit_factor": 0.79,
+      "max_drawdown_dollars": 2859.01,
+      "hit_rate_by_regime": {
+        "bullish": 0.3043,
+        "bearish": 0.2632,
+        "neutral": 0.5756
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 60,
+      "bearish_rsi": 50,
+      "windows_traded": 1857,
+      "total_pnl_dollars": -2325.89,
+      "profit_factor": 0.802,
+      "max_drawdown_dollars": 2582.49,
+      "hit_rate_by_regime": {
+        "neutral": 0.5509,
+        "bearish": 0.2964,
+        "bullish": 0.307
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 60,
+      "bearish_rsi": 48,
+      "windows_traded": 1823,
+      "total_pnl_dollars": -2308.89,
+      "profit_factor": 0.798,
+      "max_drawdown_dollars": 2605.19,
+      "hit_rate_by_regime": {
+        "neutral": 0.5412,
+        "bearish": 0.2859,
+        "bullish": 0.307
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 60,
+      "bearish_rsi": 50,
+      "windows_traded": 1821,
+      "total_pnl_dollars": -2303.77,
+      "profit_factor": 0.798,
+      "max_drawdown_dollars": 2545.66,
+      "hit_rate_by_regime": {
+        "neutral": 0.5614,
+        "bearish": 0.2915,
+        "bullish": 0.315
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 50,
+      "bearish_rsi": 40,
+      "windows_traded": 1839,
+      "total_pnl_dollars": -2303.41,
+      "profit_factor": 0.802,
+      "max_drawdown_dollars": 2785.55,
+      "hit_rate_by_regime": {
+        "bullish": 0.3094,
+        "bearish": 0.2768,
+        "neutral": 0.5527
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 50,
+      "bearish_rsi": 40,
+      "windows_traded": 1782,
+      "total_pnl_dollars": -2292.2,
+      "profit_factor": 0.791,
+      "max_drawdown_dollars": 2838.24,
+      "hit_rate_by_regime": {
+        "bullish": 0.2991,
+        "bearish": 0.2542,
+        "neutral": 0.577
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 55,
+      "bearish_rsi": 48,
+      "windows_traded": 1828,
+      "total_pnl_dollars": -2262.84,
+      "profit_factor": 0.801,
+      "max_drawdown_dollars": 2676.08,
+      "hit_rate_by_regime": {
+        "neutral": 0.581,
+        "bearish": 0.2919,
+        "bullish": 0.3073
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 52,
+      "bearish_rsi": 42,
+      "windows_traded": 1759,
+      "total_pnl_dollars": -2236.91,
+      "profit_factor": 0.791,
+      "max_drawdown_dollars": 2748.09,
+      "hit_rate_by_regime": {
+        "bullish": 0.2949,
+        "bearish": 0.2691,
+        "neutral": 0.5663
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 60,
+      "bearish_rsi": 48,
+      "windows_traded": 1773,
+      "total_pnl_dollars": -2229.8,
+      "profit_factor": 0.796,
+      "max_drawdown_dollars": 2563.68,
+      "hit_rate_by_regime": {
+        "neutral": 0.5568,
+        "bearish": 0.2811,
+        "bullish": 0.315
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 52,
+      "bearish_rsi": 42,
+      "windows_traded": 1792,
+      "total_pnl_dollars": -2142.05,
+      "profit_factor": 0.808,
+      "max_drawdown_dollars": 2640.85,
+      "hit_rate_by_regime": {
+        "bullish": 0.3109,
+        "bearish": 0.2706,
+        "neutral": 0.546
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 55,
+      "bearish_rsi": 45,
+      "windows_traded": 1832,
+      "total_pnl_dollars": -2134.03,
+      "profit_factor": 0.815,
+      "max_drawdown_dollars": 2572.25,
+      "hit_rate_by_regime": {
+        "neutral": 0.5537,
+        "bearish": 0.2796,
+        "bullish": 0.3148
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 58,
+      "bearish_rsi": 45,
+      "windows_traded": 1744,
+      "total_pnl_dollars": -2129.52,
+      "profit_factor": 0.798,
+      "max_drawdown_dollars": 2496.64,
+      "hit_rate_by_regime": {
+        "neutral": 0.5547,
+        "bearish": 0.2739,
+        "bullish": 0.3044
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 52,
+      "bearish_rsi": 40,
+      "windows_traded": 1731,
+      "total_pnl_dollars": -2085.65,
+      "profit_factor": 0.798,
+      "max_drawdown_dollars": 2622.3,
+      "hit_rate_by_regime": {
+        "bullish": 0.2949,
+        "bearish": 0.2542,
+        "neutral": 0.5637
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 58,
+      "bearish_rsi": 45,
+      "windows_traded": 1788,
+      "total_pnl_dollars": -2047.52,
+      "profit_factor": 0.815,
+      "max_drawdown_dollars": 2427.31,
+      "hit_rate_by_regime": {
+        "neutral": 0.5489,
+        "bearish": 0.2796,
+        "bullish": 0.3106
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 52,
+      "bearish_rsi": 40,
+      "windows_traded": 1805,
+      "total_pnl_dollars": -2024.04,
+      "profit_factor": 0.82,
+      "max_drawdown_dollars": 2507.94,
+      "hit_rate_by_regime": {
+        "bullish": 0.3117,
+        "bearish": 0.2768,
+        "neutral": 0.5495
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 58,
+      "bearish_rsi": 48,
+      "windows_traded": 1759,
+      "total_pnl_dollars": -1983.78,
+      "profit_factor": 0.813,
+      "max_drawdown_dollars": 2337.04,
+      "hit_rate_by_regime": {
+        "neutral": 0.5667,
+        "bearish": 0.2919,
+        "bullish": 0.3088
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 55,
+      "bearish_rsi": 42,
+      "windows_traded": 1788,
+      "total_pnl_dollars": -1964.12,
+      "profit_factor": 0.822,
+      "max_drawdown_dollars": 2396.84,
+      "hit_rate_by_regime": {
+        "neutral": 0.5517,
+        "bearish": 0.2648,
+        "bullish": 0.3148
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 52,
+      "bearish_rsi": 40,
+      "windows_traded": 1753,
+      "total_pnl_dollars": -1963.94,
+      "profit_factor": 0.815,
+      "max_drawdown_dollars": 2478.8,
+      "hit_rate_by_regime": {
+        "bullish": 0.3109,
+        "bearish": 0.2632,
+        "neutral": 0.5652
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 60,
+      "bearish_rsi": 45,
+      "windows_traded": 1763,
+      "total_pnl_dollars": -1931.77,
+      "profit_factor": 0.82,
+      "max_drawdown_dollars": 2293.5,
+      "hit_rate_by_regime": {
+        "neutral": 0.5483,
+        "bearish": 0.2796,
+        "bullish": 0.307
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 60,
+      "bearish_rsi": 45,
+      "windows_traded": 1708,
+      "total_pnl_dollars": -1887.42,
+      "profit_factor": 0.813,
+      "max_drawdown_dollars": 2233.3,
+      "hit_rate_by_regime": {
+        "neutral": 0.5557,
+        "bearish": 0.2739,
+        "bullish": 0.315
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 58,
+      "bearish_rsi": 42,
+      "windows_traded": 1744,
+      "total_pnl_dollars": -1877.61,
+      "profit_factor": 0.821,
+      "max_drawdown_dollars": 2267.75,
+      "hit_rate_by_regime": {
+        "neutral": 0.548,
+        "bearish": 0.2648,
+        "bullish": 0.3106
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 55,
+      "bearish_rsi": 45,
+      "windows_traded": 1740,
+      "total_pnl_dollars": -1844.59,
+      "profit_factor": 0.822,
+      "max_drawdown_dollars": 2310.77,
+      "hit_rate_by_regime": {
+        "neutral": 0.5661,
+        "bearish": 0.2812,
+        "bullish": 0.3073
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 55,
+      "bearish_rsi": 42,
+      "windows_traded": 1737,
+      "total_pnl_dollars": -1820.6,
+      "profit_factor": 0.824,
+      "max_drawdown_dollars": 2261.59,
+      "hit_rate_by_regime": {
+        "neutral": 0.5533,
+        "bearish": 0.2706,
+        "bullish": 0.3083
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 60,
+      "bearish_rsi": 42,
+      "windows_traded": 1719,
+      "total_pnl_dollars": -1761.86,
+      "profit_factor": 0.827,
+      "max_drawdown_dollars": 2136.08,
+      "hit_rate_by_regime": {
+        "neutral": 0.5476,
+        "bearish": 0.2648,
+        "bullish": 0.307
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 60,
+      "bearish_rsi": 48,
+      "windows_traded": 1713,
+      "total_pnl_dollars": -1755.41,
+      "profit_factor": 0.826,
+      "max_drawdown_dollars": 2113.39,
+      "hit_rate_by_regime": {
+        "neutral": 0.5651,
+        "bearish": 0.2919,
+        "bullish": 0.3154
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 55,
+      "bearish_rsi": 40,
+      "windows_traded": 1698,
+      "total_pnl_dollars": -1642.49,
+      "profit_factor": 0.833,
+      "max_drawdown_dollars": 2116.71,
+      "hit_rate_by_regime": {
+        "neutral": 0.5676,
+        "bearish": 0.2632,
+        "bullish": 0.3083
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 55,
+      "bearish_rsi": 40,
+      "windows_traded": 1749,
+      "total_pnl_dollars": -1587.61,
+      "profit_factor": 0.848,
+      "max_drawdown_dollars": 2056.91,
+      "hit_rate_by_regime": {
+        "neutral": 0.5567,
+        "bearish": 0.2768,
+        "bullish": 0.3148
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 55,
+      "bearish_rsi": 42,
+      "windows_traded": 1687,
+      "total_pnl_dollars": -1573.57,
+      "profit_factor": 0.836,
+      "max_drawdown_dollars": 2086.44,
+      "hit_rate_by_regime": {
+        "neutral": 0.5758,
+        "bearish": 0.2691,
+        "bullish": 0.3073
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 58,
+      "bearish_rsi": 45,
+      "windows_traded": 1671,
+      "total_pnl_dollars": -1565.53,
+      "profit_factor": 0.837,
+      "max_drawdown_dollars": 1971.73,
+      "hit_rate_by_regime": {
+        "neutral": 0.5579,
+        "bearish": 0.2812,
+        "bullish": 0.3088
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 58,
+      "bearish_rsi": 42,
+      "windows_traded": 1688,
+      "total_pnl_dollars": -1563.5,
+      "profit_factor": 0.839,
+      "max_drawdown_dollars": 2008.33,
+      "hit_rate_by_regime": {
+        "neutral": 0.5567,
+        "bearish": 0.2706,
+        "bullish": 0.3044
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 58,
+      "bearish_rsi": 40,
+      "windows_traded": 1705,
+      "total_pnl_dollars": -1501.1,
+      "profit_factor": 0.849,
+      "max_drawdown_dollars": 1927.82,
+      "hit_rate_by_regime": {
+        "neutral": 0.5526,
+        "bearish": 0.2768,
+        "bullish": 0.3106
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 55,
+      "bearish_rsi": 40,
+      "windows_traded": 1659,
+      "total_pnl_dollars": -1422.31,
+      "profit_factor": 0.846,
+      "max_drawdown_dollars": 1963.05,
+      "hit_rate_by_regime": {
+        "neutral": 0.573,
+        "bearish": 0.2542,
+        "bullish": 0.3073
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 58,
+      "bearish_rsi": 40,
+      "windows_traded": 1649,
+      "total_pnl_dollars": -1385.39,
+      "profit_factor": 0.849,
+      "max_drawdown_dollars": 1863.45,
+      "hit_rate_by_regime": {
+        "neutral": 0.5687,
+        "bearish": 0.2632,
+        "bullish": 0.3044
+      }
+    },
+    {
+      "rsi_period": 10,
+      "bullish_rsi": 60,
+      "bearish_rsi": 40,
+      "windows_traded": 1680,
+      "total_pnl_dollars": -1385.35,
+      "profit_factor": 0.856,
+      "max_drawdown_dollars": 1827.3,
+      "hit_rate_by_regime": {
+        "neutral": 0.5518,
+        "bearish": 0.2768,
+        "bullish": 0.307
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 60,
+      "bearish_rsi": 45,
+      "windows_traded": 1625,
+      "total_pnl_dollars": -1337.16,
+      "profit_factor": 0.853,
+      "max_drawdown_dollars": 1739.96,
+      "hit_rate_by_regime": {
+        "neutral": 0.5576,
+        "bearish": 0.2812,
+        "bullish": 0.3154
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 60,
+      "bearish_rsi": 42,
+      "windows_traded": 1652,
+      "total_pnl_dollars": -1321.4,
+      "profit_factor": 0.858,
+      "max_drawdown_dollars": 1751.63,
+      "hit_rate_by_regime": {
+        "neutral": 0.5574,
+        "bearish": 0.2706,
+        "bullish": 0.315
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 58,
+      "bearish_rsi": 42,
+      "windows_traded": 1618,
+      "total_pnl_dollars": -1294.51,
+      "profit_factor": 0.853,
+      "max_drawdown_dollars": 1747.4,
+      "hit_rate_by_regime": {
+        "neutral": 0.5674,
+        "bearish": 0.2691,
+        "bullish": 0.3088
+      }
+    },
+    {
+      "rsi_period": 14,
+      "bullish_rsi": 60,
+      "bearish_rsi": 40,
+      "windows_traded": 1613,
+      "total_pnl_dollars": -1143.29,
+      "profit_factor": 0.87,
+      "max_drawdown_dollars": 1606.75,
+      "hit_rate_by_regime": {
+        "neutral": 0.5685,
+        "bearish": 0.2632,
+        "bullish": 0.315
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 58,
+      "bearish_rsi": 40,
+      "windows_traded": 1590,
+      "total_pnl_dollars": -1143.25,
+      "profit_factor": 0.865,
+      "max_drawdown_dollars": 1624.01,
+      "hit_rate_by_regime": {
+        "neutral": 0.5655,
+        "bearish": 0.2542,
+        "bullish": 0.3088
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 60,
+      "bearish_rsi": 42,
+      "windows_traded": 1572,
+      "total_pnl_dollars": -1066.14,
+      "profit_factor": 0.871,
+      "max_drawdown_dollars": 1515.66,
+      "hit_rate_by_regime": {
+        "neutral": 0.5663,
+        "bearish": 0.2691,
+        "bullish": 0.3154
+      }
+    },
+    {
+      "rsi_period": 21,
+      "bullish_rsi": 60,
+      "bearish_rsi": 40,
+      "windows_traded": 1544,
+      "total_pnl_dollars": -914.88,
+      "profit_factor": 0.885,
+      "max_drawdown_dollars": 1392.27,
+      "hit_rate_by_regime": {
+        "neutral": 0.5646,
+        "bearish": 0.2542,
+        "bullish": 0.3154
+      }
+    }
+  ]
+}
