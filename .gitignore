@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Local state
+*.sqlite
+*.sqlite-journal
+window_logs.jsonl
+config.yaml
+
+# Backtest candle cache (refetchable from Coinbase; reports are committed)
+backtest/data/
