@@ -1,0 +1,63 @@
+schema: '2.0'
+stages:
+  capture:
+    cmd: python3 -m datalake.capture --iterations 5 --interval 60
+    params:
+      params.yaml:
+        capture_interval_seconds: 60
+        capture_iterations: 5
+    outs:
+    - path: datalake/buffer
+      hash: md5
+      md5: ab84db51d12ac5f3f84fa974403333ec.dir
+      size: 21559
+      nfiles: 1
+  validate:
+    cmd: python3 -m datalake.validate --all
+    deps:
+    - path: datalake/buffer
+      hash: md5
+      md5: ab84db51d12ac5f3f84fa974403333ec.dir
+      size: 21559
+      nfiles: 1
+    - path: datalake/config.py
+      hash: md5
+      md5: cce8ced9a19483bf779cd64c7e5ef1f6
+      size: 2595
+    - path: datalake/schemas.py
+      hash: md5
+      md5: 7650d445a72f052eaacdc4c2e58b064b
+      size: 3544
+    - path: datalake/validate.py
+      hash: md5
+      md5: fa929d4c0b0494ffb0f9bdd7df0b3dbe
+      size: 18055
+    outs:
+    - path: datalake/validation
+      hash: md5
+      md5: 25587b667b0625d8eecc528d661f63c5.dir
+      size: 1699
+      nfiles: 1
+  store:
+    cmd: python3 -m datalake.store --all
+    deps:
+    - path: datalake/buffer
+      hash: md5
+      md5: ab84db51d12ac5f3f84fa974403333ec.dir
+      size: 21559
+      nfiles: 1
+    - path: datalake/store.py
+      hash: md5
+      md5: 33ace5d635790c3ed42b57c96f11a908
+      size: 7483
+    - path: datalake/validation
+      hash: md5
+      md5: 25587b667b0625d8eecc528d661f63c5.dir
+      size: 1699
+      nfiles: 1
+    outs:
+    - path: datalake/lake
+      hash: md5
+      md5: cd9d59b05aa16cd0bdd91c6adfaff07d.dir
+      size: 39121
+      nfiles: 3

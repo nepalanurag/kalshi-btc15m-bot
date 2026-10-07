@@ -110,6 +110,29 @@ prices, spreads, queue position, and fills are modeled, not measured, so
 every PnL number is conditional on the stated assumptions -- a starting
 point for risk decisions, not an expected return.
 
+## Market-data lake
+
+The `datalake/` package is the production market-data infrastructure behind
+this research: a scheduled capture loop records the Kalshi BTC-15m
+order-book snapshot and the Coinbase 60s candle every minute (both public
+APIs, no keys), validates each batch against versioned data contracts
+(Pandera schemas, staleness and cross-feed alignment checks, quarantine on
+failure), and stores validated hours as date/hour-partitioned Parquet with a
+per-partition manifest, DVC-tracked. A dashboard generator, an LLM red-team
+audit of the backtest harness, and adversarial scenario stress tests round
+it out. Full architecture, retention policy, and run instructions are in
+`datalake/README.md`:
+
+```bash
+pip install -r datalake/requirements.txt   # pinned
+python -m datalake.capture --iterations 5  # capture
+python -m datalake.validate --all          # validate
+python -m datalake.store --all             # store
+python -m datalake.dashboard               # dashboard
+python -m datalake.ai_audit --dry-run      # audit (checklist, no API)
+pytest datalake/tests -q                   # tests
+```
+
 ## Notes
 
 - Uses the Kalshi Trade API v2: market data from `/trade-api/v2/markets` and order books, orders through `/trade-api/v2/portfolio/orders`.

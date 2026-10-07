@@ -1,0 +1,21 @@
+{
+  "seed": 7,
+  "generated_at": "2026-10-07T16:14:09.320315+00:00",
+  "contract_version": "1.0",
+  "generator": "template",
+  "name": "flash_crash",
+  "kind": "candles",
+  "description": "A single -5% candle (exchange glitch / liquidation cascade); tests settlement against a discontinuous move.",
+  "candle_params": {
+    "days": 7,
+    "start_price": 85000.0,
+    "mu_per_min": 0.0,
+    "sigma_mult": 1.0,
+    "shock": null,
+    "jump": {
+      "at_min": 3600,
+      "log_jump": -0.0513
+    },
+    "gap": null
+  }
+}

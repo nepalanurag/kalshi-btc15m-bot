@@ -1,0 +1,27 @@
+{
+  "seed": 7,
+  "generated_at": "2026-10-07T16:14:09.320315+00:00",
+  "contract_version": "1.0",
+  "generator": "template",
+  "name": "wide_spread",
+  "kind": "book",
+  "description": "30c spread (40 bid / 70 ask): nothing is executable under a 60c limit; both models must report zero fills, not errors.",
+  "book_params": {
+    "ladder": [
+      [
+        70,
+        50
+      ],
+      [
+        71,
+        50
+      ],
+      [
+        72,
+        50
+      ]
+    ],
+    "desired_count": 10,
+    "limit_price_cents": 60
+  }
+}

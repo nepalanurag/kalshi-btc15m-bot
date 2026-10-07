@@ -1,0 +1,458 @@
+{
+  "generated_at": "2026-10-07T16:15:34.392878+00:00",
+  "seeds": 5,
+  "results": [
+    {
+      "name": "baseline",
+      "kind": "candles",
+      "seeds": 5,
+      "pnl_dollars": {
+        "n": 5,
+        "mean": -213.3,
+        "p5": -768.69,
+        "p95": 110.87,
+        "max": 122.05
+      },
+      "drawdown_dollars": {
+        "n": 5,
+        "mean": 426.26,
+        "p5": 188.02,
+        "p95": 838.86,
+        "max": 920.49
+      },
+      "hit_rate": {
+        "n": 5,
+        "mean": 0.4611
+      },
+      "windows_traded_mean": 671.0,
+      "windows_skipped_mean": 1.0
+    },
+    {
+      "name": "flash_crash",
+      "kind": "candles",
+      "seeds": 5,
+      "pnl_dollars": {
+        "n": 5,
+        "mean": -279.95,
+        "p5": -925.71,
+        "p95": 151.03,
+        "max": 196.25
+      },
+      "drawdown_dollars": {
+        "n": 5,
+        "mean": 478.32,
+        "p5": 211.23,
+        "p95": 983.35,
+        "max": 1078.16
+      },
+      "hit_rate": {
+        "n": 5,
+        "mean": 0.4555
+      },
+      "windows_traded_mean": 671.0,
+      "windows_skipped_mean": 1.0
+    },
+    {
+      "name": "normal_book",
+      "kind": "book",
+      "seeds": 5,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "model": "optimistic",
+          "filled": 10,
+          "fill_rate": 1.0,
+          "avg_price_cents": 48.0,
+          "cost_cents": 480,
+          "fee_cents": 18
+        },
+        {
+          "seed": 1000,
+          "model": "conservative",
+          "filled": 10,
+          "fill_rate": 1.0,
+          "avg_price_cents": 48.0,
+          "cost_cents": 480,
+          "fee_cents": 18
+        },
+        {
+          "seed": 1001,
+          "model": "optimistic",
+          "filled": 10,
+          "fill_rate": 1.0,
+          "avg_price_cents": 48.0,
+          "cost_cents": 480,
+          "fee_cents": 18
+        },
+        {
+          "seed": 1001,
+          "model": "conservative",
+          "filled": 10,
+          "fill_rate": 1.0,
+          "avg_price_cents": 48.0,
+          "cost_cents": 480,
+          "fee_cents": 18
+        },
+        {
+          "seed": 1002,
+          "model": "optimistic",
+          "filled": 10,
+          "fill_rate": 1.0,
+          "avg_price_cents": 48.0,
+          "cost_cents": 480,
+          "fee_cents": 18
+        },
+        {
+          "seed": 1002,
+          "model": "conservative",
+          "filled": 10,
+          "fill_rate": 1.0,
+          "avg_price_cents": 48.0,
+          "cost_cents": 480,
+          "fee_cents": 18
+        },
+        {
+          "seed": 1003,
+          "model": "optimistic",
+          "filled": 10,
+          "fill_rate": 1.0,
+          "avg_price_cents": 48.0,
+          "cost_cents": 480,
+          "fee_cents": 18
+        },
+        {
+          "seed": 1003,
+          "model": "conservative",
+          "filled": 10,
+          "fill_rate": 1.0,
+          "avg_price_cents": 48.0,
+          "cost_cents": 480,
+          "fee_cents": 18
+        },
+        {
+          "seed": 1004,
+          "model": "optimistic",
+          "filled": 10,
+          "fill_rate": 1.0,
+          "avg_price_cents": 48.0,
+          "cost_cents": 480,
+          "fee_cents": 18
+        },
+        {
+          "seed": 1004,
+          "model": "conservative",
+          "filled": 10,
+          "fill_rate": 1.0,
+          "avg_price_cents": 48.0,
+          "cost_cents": 480,
+          "fee_cents": 18
+        }
+      ],
+      "summary": {
+        "optimistic": {
+          "fill_rate_mean": 1.0,
+          "fill_rate_min": 1.0,
+          "avg_price_cents_mean": 48.0
+        },
+        "conservative": {
+          "fill_rate_mean": 1.0,
+          "fill_rate_min": 1.0,
+          "avg_price_cents_mean": 48.0
+        }
+      }
+    },
+    {
+      "name": "thin_book",
+      "kind": "book",
+      "seeds": 5,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "model": "optimistic",
+          "filled": 4,
+          "fill_rate": 0.4,
+          "avg_price_cents": 53.25,
+          "cost_cents": 213,
+          "fee_cents": 7
+        },
+        {
+          "seed": 1000,
+          "model": "conservative",
+          "filled": 0,
+          "fill_rate": 0.0,
+          "avg_price_cents": null,
+          "cost_cents": 0,
+          "fee_cents": 0
+        },
+        {
+          "seed": 1001,
+          "model": "optimistic",
+          "filled": 4,
+          "fill_rate": 0.4,
+          "avg_price_cents": 53.25,
+          "cost_cents": 213,
+          "fee_cents": 7
+        },
+        {
+          "seed": 1001,
+          "model": "conservative",
+          "filled": 1,
+          "fill_rate": 0.1,
+          "avg_price_cents": 55.0,
+          "cost_cents": 55,
+          "fee_cents": 2
+        },
+        {
+          "seed": 1002,
+          "model": "optimistic",
+          "filled": 4,
+          "fill_rate": 0.4,
+          "avg_price_cents": 53.25,
+          "cost_cents": 213,
+          "fee_cents": 7
+        },
+        {
+          "seed": 1002,
+          "model": "conservative",
+          "filled": 1,
+          "fill_rate": 0.1,
+          "avg_price_cents": 55.0,
+          "cost_cents": 55,
+          "fee_cents": 2
+        },
+        {
+          "seed": 1003,
+          "model": "optimistic",
+          "filled": 4,
+          "fill_rate": 0.4,
+          "avg_price_cents": 53.25,
+          "cost_cents": 213,
+          "fee_cents": 7
+        },
+        {
+          "seed": 1003,
+          "model": "conservative",
+          "filled": 1,
+          "fill_rate": 0.1,
+          "avg_price_cents": 55.0,
+          "cost_cents": 55,
+          "fee_cents": 2
+        },
+        {
+          "seed": 1004,
+          "model": "optimistic",
+          "filled": 4,
+          "fill_rate": 0.4,
+          "avg_price_cents": 53.25,
+          "cost_cents": 213,
+          "fee_cents": 7
+        },
+        {
+          "seed": 1004,
+          "model": "conservative",
+          "filled": 1,
+          "fill_rate": 0.1,
+          "avg_price_cents": 55.0,
+          "cost_cents": 55,
+          "fee_cents": 2
+        }
+      ],
+      "summary": {
+        "optimistic": {
+          "fill_rate_mean": 0.4,
+          "fill_rate_min": 0.4,
+          "avg_price_cents_mean": 53.25
+        },
+        "conservative": {
+          "fill_rate_mean": 0.08,
+          "fill_rate_min": 0.0,
+          "avg_price_cents_mean": 55.0
+        }
+      }
+    },
+    {
+      "name": "trading_halt",
+      "kind": "candles",
+      "seeds": 5,
+      "pnl_dollars": {
+        "n": 5,
+        "mean": -204.47,
+        "p5": -756.93,
+        "p95": 116.27,
+        "max": 123.98
+      },
+      "drawdown_dollars": {
+        "n": 5,
+        "mean": 424.67,
+        "p5": 188.02,
+        "p95": 832.5,
+        "max": 912.54
+      },
+      "hit_rate": {
+        "n": 5,
+        "mean": 0.4616
+      },
+      "windows_traded_mean": 669.0,
+      "windows_skipped_mean": 3.0
+    },
+    {
+      "name": "trend_day",
+      "kind": "candles",
+      "seeds": 5,
+      "pnl_dollars": {
+        "n": 5,
+        "mean": -399.17,
+        "p5": -781.31,
+        "p95": -136.93,
+        "max": -112.86
+      },
+      "drawdown_dollars": {
+        "n": 5,
+        "mean": 526.32,
+        "p5": 286.06,
+        "p95": 845.56,
+        "max": 900.17
+      },
+      "hit_rate": {
+        "n": 5,
+        "mean": 0.4486
+      },
+      "windows_traded_mean": 671.0,
+      "windows_skipped_mean": 1.0
+    },
+    {
+      "name": "volatility_shock",
+      "kind": "candles",
+      "seeds": 5,
+      "pnl_dollars": {
+        "n": 5,
+        "mean": -235.98,
+        "p5": -710.87,
+        "p95": 142.03,
+        "max": 166.16
+      },
+      "drawdown_dollars": {
+        "n": 5,
+        "mean": 431.54,
+        "p5": 177.1,
+        "p95": 777.62,
+        "max": 805.65
+      },
+      "hit_rate": {
+        "n": 5,
+        "mean": 0.4596
+      },
+      "windows_traded_mean": 671.0,
+      "windows_skipped_mean": 1.0
+    },
+    {
+      "name": "wide_spread",
+      "kind": "book",
+      "seeds": 5,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "model": "optimistic",
+          "filled": 0,
+          "fill_rate": 0.0,
+          "avg_price_cents": null,
+          "cost_cents": 0,
+          "fee_cents": 0
+        },
+        {
+          "seed": 1000,
+          "model": "conservative",
+          "filled": 0,
+          "fill_rate": 0.0,
+          "avg_price_cents": null,
+          "cost_cents": 0,
+          "fee_cents": 0
+        },
+        {
+          "seed": 1001,
+          "model": "optimistic",
+          "filled": 0,
+          "fill_rate": 0.0,
+          "avg_price_cents": null,
+          "cost_cents": 0,
+          "fee_cents": 0
+        },
+        {
+          "seed": 1001,
+          "model": "conservative",
+          "filled": 0,
+          "fill_rate": 0.0,
+          "avg_price_cents": null,
+          "cost_cents": 0,
+          "fee_cents": 0
+        },
+        {
+          "seed": 1002,
+          "model": "optimistic",
+          "filled": 0,
+          "fill_rate": 0.0,
+          "avg_price_cents": null,
+          "cost_cents": 0,
+          "fee_cents": 0
+        },
+        {
+          "seed": 1002,
+          "model": "conservative",
+          "filled": 0,
+          "fill_rate": 0.0,
+          "avg_price_cents": null,
+          "cost_cents": 0,
+          "fee_cents": 0
+        },
+        {
+          "seed": 1003,
+          "model": "optimistic",
+          "filled": 0,
+          "fill_rate": 0.0,
+          "avg_price_cents": null,
+          "cost_cents": 0,
+          "fee_cents": 0
+        },
+        {
+          "seed": 1003,
+          "model": "conservative",
+          "filled": 0,
+          "fill_rate": 0.0,
+          "avg_price_cents": null,
+          "cost_cents": 0,
+          "fee_cents": 0
+        },
+        {
+          "seed": 1004,
+          "model": "optimistic",
+          "filled": 0,
+          "fill_rate": 0.0,
+          "avg_price_cents": null,
+          "cost_cents": 0,
+          "fee_cents": 0
+        },
+        {
+          "seed": 1004,
+          "model": "conservative",
+          "filled": 0,
+          "fill_rate": 0.0,
+          "avg_price_cents": null,
+          "cost_cents": 0,
+          "fee_cents": 0
+        }
+      ],
+      "summary": {
+        "optimistic": {
+          "fill_rate_mean": 0.0,
+          "fill_rate_min": 0.0,
+          "avg_price_cents_mean": null
+        },
+        "conservative": {
+          "fill_rate_mean": 0.0,
+          "fill_rate_min": 0.0,
+          "avg_price_cents_mean": null
+        }
+      }
+    }
+  ]
+}

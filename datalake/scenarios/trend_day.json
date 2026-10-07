@@ -1,0 +1,18 @@
+{
+  "seed": 7,
+  "generated_at": "2026-10-07T16:14:09.320315+00:00",
+  "contract_version": "1.0",
+  "generator": "template",
+  "name": "trend_day",
+  "kind": "candles",
+  "description": "Persistent +1%/day drift; the RSI rule should ride it -- tests regime attribution under trend.",
+  "candle_params": {
+    "days": 7,
+    "start_price": 85000.0,
+    "mu_per_min": 6.944444444444445e-06,
+    "sigma_mult": 1.0,
+    "shock": null,
+    "jump": null,
+    "gap": null
+  }
+}

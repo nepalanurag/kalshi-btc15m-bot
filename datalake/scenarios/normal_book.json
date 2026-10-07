@@ -1,0 +1,47 @@
+{
+  "seed": 7,
+  "generated_at": "2026-10-07T16:14:09.320315+00:00",
+  "contract_version": "1.0",
+  "generator": "template",
+  "name": "normal_book",
+  "kind": "book",
+  "description": "Control book: 5c-wide top, 8 levels, healthy size.",
+  "book_params": {
+    "ladder": [
+      [
+        48,
+        40
+      ],
+      [
+        49,
+        60
+      ],
+      [
+        50,
+        80
+      ],
+      [
+        51,
+        60
+      ],
+      [
+        52,
+        40
+      ],
+      [
+        53,
+        30
+      ],
+      [
+        54,
+        20
+      ],
+      [
+        55,
+        10
+      ]
+    ],
+    "desired_count": 10,
+    "limit_price_cents": 60
+  }
+}

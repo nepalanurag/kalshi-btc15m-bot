@@ -1,0 +1,72 @@
+{
+  "contract_version": "1.0",
+  "generated_at": "2026-10-07T16:38:41.067084+00:00",
+  "coverage": {
+    "status": "ok",
+    "partitions": 1,
+    "partition_list": [
+      "datalake/lake/date=2026-10-07/hour=16"
+    ],
+    "snapshots": 5,
+    "candles": 5,
+    "time_range": {
+      "min": "2026-10-07T16:33:00+00:00",
+      "max": "2026-10-07T16:38:34.323739+00:00"
+    }
+  },
+  "microstructure": {
+    "status": "ok",
+    "snapshots": 5,
+    "spread_cents": {
+      "mean": 1.0,
+      "median": 1.0,
+      "p95": 1.0,
+      "max": 1.0
+    },
+    "book_depth_levels": {
+      "mean": 278.6,
+      "median": 279.0
+    },
+    "empty_side_share": 0.0
+  },
+  "regime_attribution": {
+    "status": "ok",
+    "regimes": {
+      "bullish": {
+        "traded_windows": 665,
+        "hit_rate": 0.3083,
+        "avg_implied_prob": 0.3378,
+        "pnl_dollars": -766.85,
+        "profit_factor": 0.83,
+        "calibration_gap": -0.0295
+      },
+      "bearish": {
+        "traded_windows": 617,
+        "hit_rate": 0.2739,
+        "avg_implied_prob": 0.3412,
+        "pnl_dollars": -1469.12,
+        "profit_factor": 0.666,
+        "calibration_gap": -0.0673
+      },
+      "neutral": {
+        "traded_windows": 511,
+        "hit_rate": 0.5499,
+        "avg_implied_prob": 0.549,
+        "pnl_dollars": -150.65,
+        "profit_factor": 0.933,
+        "calibration_gap": 0.0009
+      }
+    },
+    "totals": {
+      "windows_traded": 1793,
+      "total_pnl_dollars": -2386.62,
+      "profit_factor": 0.786,
+      "max_drawdown_dollars": 2768.26,
+      "data_range": "2026-09-14T00:00:00+00:00"
+    }
+  },
+  "fills": {
+    "status": "no_data",
+    "note": "no paper-trades CSV supplied (--trades-csv); fill rate and slippage need bot trade logs"
+  }
+}

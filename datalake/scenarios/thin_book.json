@@ -1,0 +1,27 @@
+{
+  "seed": 7,
+  "generated_at": "2026-10-07T16:14:09.320315+00:00",
+  "contract_version": "1.0",
+  "generator": "template",
+  "name": "thin_book",
+  "kind": "book",
+  "description": "Three levels, 1-2 contracts each: partial fills and adverse selection should bite the conservative model.",
+  "book_params": {
+    "ladder": [
+      [
+        52,
+        1
+      ],
+      [
+        53,
+        1
+      ],
+      [
+        54,
+        2
+      ]
+    ],
+    "desired_count": 10,
+    "limit_price_cents": 60
+  }
+}

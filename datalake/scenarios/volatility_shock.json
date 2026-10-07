@@ -1,0 +1,22 @@
+{
+  "seed": 7,
+  "generated_at": "2026-10-07T16:14:09.320315+00:00",
+  "contract_version": "1.0",
+  "generator": "template",
+  "name": "volatility_shock",
+  "kind": "candles",
+  "description": "Volatility triples for a 2-hour window mid-week; tests whether the edge survives a vol regime change.",
+  "candle_params": {
+    "days": 7,
+    "start_price": 85000.0,
+    "mu_per_min": 0.0,
+    "sigma_mult": 1.0,
+    "shock": {
+      "start_min": 4920,
+      "len_min": 120,
+      "sigma_mult": 3.0
+    },
+    "jump": null,
+    "gap": null
+  }
+}

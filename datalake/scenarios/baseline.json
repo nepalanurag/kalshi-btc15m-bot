@@ -1,0 +1,18 @@
+{
+  "seed": 7,
+  "generated_at": "2026-10-07T16:14:09.320315+00:00",
+  "contract_version": "1.0",
+  "generator": "template",
+  "name": "baseline",
+  "kind": "candles",
+  "description": "Control: 7 days of GBM candles, no drift, normal volatility.",
+  "candle_params": {
+    "days": 7,
+    "start_price": 85000.0,
+    "mu_per_min": 0.0,
+    "sigma_mult": 1.0,
+    "shock": null,
+    "jump": null,
+    "gap": null
+  }
+}
