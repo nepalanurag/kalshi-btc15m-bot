@@ -1,0 +1,16 @@
+# Pinned runtime + dev dependencies for datalake/.
+# Install: pip install -r datalake/requirements.txt
+# Regenerate pins: ~/workspace/de-day3/venv/bin/pip freeze (2026-10-07)
+requests==2.32.3
+pandas==2.2.3
+pyarrow==19.0.1
+pandera==0.26.1
+pydantic==2.10.6
+pydantic-settings==2.7.0
+structlog==25.1.0
+PyYAML==6.0.2
+dvc==3.59.0
+pathspec==0.12.1 # dvc 3.59 needs the 0.12 API (1.x removed _DIR_MARK)
+pytest==8.3.5
+black==25.1.0
+ruff==0.9.10

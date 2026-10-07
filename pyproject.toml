@@ -7,3 +7,14 @@ name = "kalshi-btc15m-bot"
 version = "0.1.0"
 description = "Deterministic one-fill-per-window Kalshi BTC 15-minute trading bot"
 requires-python = ">=3.10"
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["E501"]

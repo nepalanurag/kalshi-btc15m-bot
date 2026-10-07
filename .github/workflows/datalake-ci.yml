@@ -1,0 +1,27 @@
+name: datalake-ci
+
+on:
+  push:
+    paths:
+      - "datalake/**"
+      - ".github/workflows/datalake-ci.yml"
+  pull_request:
+    paths:
+      - "datalake/**"
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned dependencies
+        run: pip install -r datalake/requirements.txt
+      - name: Ruff
+        run: ruff check datalake
+      - name: Black
+        run: black --check datalake
+      - name: Pytest
+        run: pytest datalake/tests -q

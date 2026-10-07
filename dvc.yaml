@@ -1,0 +1,40 @@
+# DVC pipeline: buffer -> validate -> store.
+#
+# `dvc repro` runs the offline stages (validate, store). The capture stage is
+# normally a long-running loop (systemd/cron); here it runs a bounded demo so
+# the pipeline graph is complete and reproducible end to end:
+#
+#   dvc repro           # capture (5 iters) -> validate -> store
+#   dvc dag             # show the stage graph
+#
+# The lake itself (parquet + manifests) is DVC-tracked; the buffer and
+# validation reports are pipeline intermediates. No remote is configured:
+# add one with `dvc remote add -d storage <url>` to share the lake.
+
+stages:
+  capture:
+    cmd: python3 -m datalake.capture --iterations ${capture_iterations} --interval ${capture_interval_seconds}
+    params:
+      - params.yaml:
+          - capture_iterations
+          - capture_interval_seconds
+    outs:
+      - datalake/buffer:
+          persist: true
+  validate:
+    cmd: python3 -m datalake.validate --all
+    deps:
+      - datalake/buffer
+      - datalake/validate.py
+      - datalake/schemas.py
+      - datalake/config.py
+    outs:
+      - datalake/validation
+  store:
+    cmd: python3 -m datalake.store --all
+    deps:
+      - datalake/buffer
+      - datalake/validation
+      - datalake/store.py
+    outs:
+      - datalake/lake

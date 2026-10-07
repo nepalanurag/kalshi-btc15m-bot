@@ -11,3 +11,12 @@ config.yaml
 
 # Backtest candle cache (refetchable from Coinbase; reports are committed)
 backtest/data/
+
+# Market-data lake runtime state: raw buffer, validation reports/quarantine,
+# and the Parquet lake itself (DVC-tracked via dvc.yaml, not git).
+# Committed lake artifacts: datalake/dashboard/, datalake/ai_audit_report.md,
+# datalake/scenarios/, datalake/stress_report.md
+datalake/buffer/
+datalake/validation/
+datalake/lake/
+.dvc/cache/
